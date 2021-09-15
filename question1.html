@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="questions.js">
+        
+    </script>
+    
+</head>
+<body onload="load()" style="background-color: lightpink;" >
+    <h1>YOUR PERSONALITY CHECK</h1>
+    <div id="question navigation" style="display: flex; flex-direction: row; justify-content: space-between;height: 30px; background-color: rgb(47, 231, 255); ">
+        <button id="1" style="background-color:white; width: 30px;" onclick="load_que(0)"  > 
+            1
+        </button>
+        <button id="2" style="background-color:white; width: 30px;" onclick="load_que(1)" > 
+            2
+        </button>
+        <button id="3" style="background-color:white; width: 30px;" onclick="load_que(2)"> 
+            3
+        </button>
+        <button id="4" style="background-color:white; width: 30px;" onclick="load_que(3)"> 
+            4
+        </button>
+        <button id="5" style="background-color:white; width: 30px;" onclick="load_que(4)"> 
+            5
+        </button>
+        <button id="6" style="background-color:white; width: 30px;" onclick="load_que(5)"> 
+            6
+        </button>
+        <button id="7" style="background-color:white; width: 30px;" onclick="load_que(6)"> 
+            7
+        </button>
+        <button id="8" style="background-color:white; width: 30px;" onclick="load_que(7)"> 
+            8
+        </button>
+        <button id="9" style="background-color:white; width: 30px;" onclick="load_que(8)"> 
+            9
+        </button>
+        <button id="10" style="background-color:white; width: 30px;" onclick="load_que(9)"> 
+            10
+        </button>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div id="act_question" style="margin-left: 40px;" >
+        <p id="question" style="border: 1px solid black; font-size: 24px; background-color: yellow; width: auto;"></p>
+    </div>
+    <div id="options" style="margin-left: 30px;">
+        
+        <input onclick="validate(1)" name="radio" type="radio">
+        <label  >option1</label><br>
+        <input onclick="validate(2)" name="radio" type="radio">
+        <label >option2</label><br>
+        <input onclick="validate(3)" name="radio" type="radio">
+        <label >option3</label><br>
+        <input onclick="validate(4)" name="radio" type="radio">
+        <label >option4</label><br>
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="submit_buttons" style="display: flex; flex-direction: row; justify-content: space-around;">
+        <button type="submit" onclick="decrement()" style="background-color:blueviolet; font-size: 24px;">
+            PREVIOUS
+        </button>
+        <button  type="submit" onclick="increment()" id="continue" style="background-color:blueviolet; font-size: 24px;">
+            NEXT
+        </button>
+    </div>
+    <br>
+    <br>
+    <div id="submit buttons2" style="display: flex; flex-direction: row;justify-content: right;">
+        <button onclick="location.href='./result.html';">
+            SUBMIT
+        </button>
+    </div>
+    <div id="result">
+        
+    </div>
+    
+</body>
+</html>
